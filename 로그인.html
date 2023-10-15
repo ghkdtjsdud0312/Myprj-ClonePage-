@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head 부분 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공편 예약 및 여행 정보 | 대한항공</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<!-- header 부분 -->
+<body>
+    <header>
+        <div class="container"> 
+            <!-- header-맨 위 부분 -->
+            <ul class="upper">
+                <img src="/image/icon-common-16-x-16-event.png" alt="이벤트 선물상자">
+                <li><a href="#">이벤트</a></li>
+                <img src="/image/icon-common-16-x-16-customer.png" alt="자주 묻는 질문">
+                <li><a href="#">자주 묻는 질문</a></li>
+                <img src="/image/lang__button.png" alt="언어 지구">
+                <li><a href="#">대한민국-한국어</a></li>  
+            </ul>
+            <div class="nav1"> 
+                <!-- header 대한항공마크 -->
+                <div class="lower">
+                    <div class="pic">
+                        <img src="image/logo--koreanair-pc.png" width="162px" alt="대한항공 로고">
+                        <img src="image/logo--skyteam-pc.png" width="35px" alt="대한항공">
+                    </div> 
+                <!-- header navbar 메뉴 -->
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">예약</a>
+                                <img src="image/snb__title.png" alt="내림표시">
+                            </li>
+                            <li>
+                                <a href="#">공항</a>
+                                <img src="image/snb__title.png" alt="내림표시">
+                            </li>
+                            <li>
+                                <a href="#">기내</a>
+                                <img src="image/snb__title.png" alt="내림표시"> 
+                            </li>   
+                            <li>
+                                <a href="#">스카이패스</a>
+                                <img src="image/snb__title.png" alt="내림표시">
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 로그인 & 검색 부분 -->
+                    <div class="loginmenu">
+                        <a href="#"class="button">로그인</a>
+                        <a href="#">
+                            <img class="icon1" src="image/icon-gnb-40-x-40-search.png" alt="돋보기">
+                        </a>
+                        <a href="#">
+                            <img class="icon2" src="/image/drawer-trigger.png" alt="상단바">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </header>
+
+    <!-- 로그인 부분 -->
+    <div class="container-box">
+        <section class="login-boxes">
+            <div class="container-login">
+                <div class="container-boxes">
+                    <!-- 로그인 박스 -->
+                    <h1>로그인</h1>
+                    <!-- 아이디 라디오 버튼 -->
+                    <div class="radio-btn">
+                        <input type="radio" name="user-id" id="user-id" checked>
+                        <label for="user-id">아이디</label>
+                    <!-- 스카이패스 번호 라디오 버튼 -->
+                        <input type="radio" name="skypass number" id="skypass number">
+                        <label for="skypass number">스카이패스 번호</label>    
+                    </div>
+                    <!-- 아이디 입력 -->
+                    <div class="login">
+                        <label for="id">아이디</label>
+                    </div>
+                    <div class="login">
+                        <input type="text" name="id" id="id" autocomplete="off" required>
+                    </div>
+                        <!-- 비밀번호 입력 -->
+                    <div class="login">
+                        <label for="pwd">비밀번호</label>
+                    </div>
+                    <div class="login">
+                        <input type="password" name="pwd" id="pwd" autocomplete="off" required>
+                    </div>
+                    
+                    <!-- 아이디 저장 체크박스 -->
+                    <div class="checkbox">
+                        <input type="checkbox" name="save id" id="save id">
+                        <label for="save id">아이디 저장</label>
+                    </div>
+                    <!-- 로그인 버튼 -->
+                    <div class="login-btn">
+                        <a href="http://127.0.0.1:5500/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5.html" style="color: white">로그인</a>
+                    </div>
+                    <!-- 아이디 찾기 -->
+                    <div class="find">
+                        <a href="#">아이디 찾기 > </a>
+                        <!-- 비밀번호 찾기 -->
+                        <a href="#">비밀번호 찾기 > </a>
+                    </div>
+                    <!-- 다른 계정으로 로그인 -->
+                    <div class="or">
+                        <span class="no-same">다른 계정으로 로그인</span>
+                    </div>
+                <div class="login-box">
+                    <!-- 네이버 로그인 -->
+                    <div class="login-sns">
+                        <input type="image" src="/image/ico-naver.png" name="네이버" id="네이버" width="20px">
+                        <label for="네이버">네이버</label>
+                    </div>
+
+                    <!-- 카카오 로그인 -->
+                    <div class="login-sns">
+                        <input type="image" src="/image/ico-kakao.png" name="카카오" id="카카오" width="20px">
+                        <label for="카카오">카카오</label>
+                    </div>
+
+                    <!-- 구글 로그인 -->
+                    <div class="login-sns">
+                        <input type="image" src="/image/ico-google.png" name="구글" id="구글" width="20px">
+                        <label for="구글">구글</label>
+                    </div>
+
+                    <!-- 페이스북 로그인 -->
+                    <div class="login-sns">
+                        <input type="image" src="/image/ico-facebook.png" name="페이스북" id="페이스북" width="20px">
+                        <label for="페이스북">페이스북</label>
+                    </div>
+                </div>
+                    <!-- 회원가입 버튼 -->
+                    <div class="signin">
+                        <a href="#">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer 부분 -->
+    <footer>
+        <div class="f-upper">
+            <div class="container">
+                <!-- 기타 참고 메뉴 -->
+                <div class="f-menu">
+                    <div class="flex-box">
+                        <h3>회사소개</h3>
+                        <a href="#">대한항공에 대하여</a>
+                        <a href="#">기업지배구조</a>
+                        <a href="#">투자정보</a>
+                        <a href="#">지속가능경영</a>
+                        <a href="#">뉴스룸</a>
+                    </div>
+                    <div class="flex-box">
+                        <h3>고객지원</h3>
+                        <a href="#">공지사항</a>
+                        <a href="#">고객의 말씀</a>
+                        <a href="#">서비스 센터</a>
+                        <a href="#">e-서식함</a>
+                        <a href="#">웹 접근성</a>
+                    </div>
+                    <div class="flex-box">
+                        <h3>약관 및 규정</h3>
+                        <a href="#">이용 약관</a>
+                        <a href="#">운송약관 및 고지사항</a>
+                        <a href="#">소비자 안전 관련 정보</a>
+                        <a href="#">운임 및 서비스 요금표</a>
+                    </div>
+                    <div class="flex-box">
+                        <h3>기타 안내</h3>
+                        <a href="#">기업 출장 여행</a>
+                        <a href="#">고객 안내 서비스</a>
+                        <a href="#">항공교통이용자 서비스 계획</a>
+                        <a href="#">항공교통이용자 피해 구제</a>
+                        <a href="#">관련 사이트</a>
+                        <a href="#">사이트맵</a>
+                    </div>    
+                </div>
+                <div class="side-box">
+                    <div class="flex-box1">
+                        <img src="/image/sns__link--youtube.png" alt="유튜브">
+                        <img src="/image/sns__link--instagram.png" alt="인스타">
+                        <img src="/image/sns__link--facebook.png" alt="페이스북">
+                        <img src="/image/sns__link--twitter.png" alt="트위터">
+                    </div>
+                    <div class="flex-box1">
+                        <img src="/image/banner-googleplay.png" alt="구글플레이">
+                        <img src="/image/banner-appstore.png" alt="애플앱스토어">
+                    </div>
+                    <div class="flex-box1">
+                        <img src="/image/banner-busan2030.png" alt="부산세계박람회">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="f-lower">
+            <div class="container">
+                <!-- 회사 정보 -->
+                <div class="f-low-box1">
+                    <div class="info">
+                        <div class="info1">
+                            <h5><span>(주)대한항공</span></h5>
+                            <span>대표:우기홍 외 1명</span>
+                            <span>주소 : 서울특별시 강서구 하늘길 260</span>
+                            <span>전화 : 1588-2001/02-2656-2001</span>
+                        </div>
+                        <div class="info2">
+                            <span>사업자등록번호 : 110-81-14794</span>
+                            <span>통신판매업신고: 강서 제 16-3010</span>
+                            <span>개인정보보호책임자 : 장성현 대한항공 부사장</span>
+                        </div>
+                        <div class="copyright">
+                            © 1997-2023 KOREAN AIR
+                        </div>
+                    </div>
+                </div>
+                <!-- 회사 연관 마크 -->
+                <div class="f-low-box2">
+                    <img src="/image/logo__wa.png" alt="과학기술정보통신부">
+                    <img src="/image/logo__isms.png" alt="isms">
+                    <img src="/image/logo__ccm.png" alt="소비자중심">
+                    <img src="/image/logo__skytrax.png" alt="skytrax">
+                </div>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html> 

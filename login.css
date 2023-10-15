@@ -1,0 +1,443 @@
+/* COMMON CSS */
+* {
+    color: #333;
+    box-sizing: border-box;
+ }
+ a {
+    text-decoration: none;
+ }
+ section {
+    width: 100%;
+ }
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+/* 헤더 부분 */
+ body {
+    width: 100vw;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+
+} 
+/* header-맨 위 부분 */
+header .upper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    margin-bottom: 10px ;
+}
+header .upper img {
+    margin-left: 30px;
+    margin-right: 3px;
+    width: 20px;
+} 
+/* header 대한항공마크 */
+header .lower {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+header .lower .pic {
+    display: flex;
+    align-items: center;
+}
+/* header navbar 메뉴 */
+header .lower .menu ul{
+    display: flex;
+    flex-direction: row;
+}
+header .menu > ul > li {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 23px;
+} 
+/* 로그인 & 검색 부분 */
+.loginmenu{
+    display: flex;
+    align-items: center;
+}
+.loginmenu > .button {
+    display: block;
+    background-color: #00265c;
+    font-size: 16px;
+    color:white;
+    border:none;
+    border-radius:20px;
+    padding: 8px 14px;
+}
+.button{
+    color:white;
+    outline: none;
+    align-items: center;
+}
+.loginmenu > .button:hover {
+    border-radius: 20px;
+    outline-offset: 5px;
+    border: 7px double;
+}
+.icon1 {
+    width: 50px;
+}
+.icon2{
+    display: none;
+} 
+
+/* 로그인 부분 */
+
+/* 메인 배경화면 */
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#8bbdf8 -75%,#e9f3fb 89%);
+    height: 800px;
+}
+/* 로그인 박스 */
+.login-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+/* 로그인 박스2 */
+.container-login{
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 590px;
+    height: 710px;
+}
+/* 로그인 글씨 박스 */
+.container-boxes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 42px;
+    margin-right: 42px;
+    height: 610px;
+    margin-top: 77px;
+}
+/* 로그인 글씨 박스 간격 */
+.container-boxes > h1, div{
+    line-height: 31px;
+    display: block;
+    margin: 5px;
+}
+/* 로그인 제목 글씨 */
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 345px;
+}
+/* 아이디, 스카이패스 번호 라디오 버튼 */
+.radio-btn label{
+  margin-right: 130px;
+}
+/* 아이디 비번 칸 */
+.login input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+.login > label {
+    margin-right: 400px;
+}
+/* 아이디 체크 박스 */
+.checkbox{
+    margin-right: 350px;
+}
+/* 로그인 버튼 */
+.login-btn{
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: #00265c;
+    font-weight: bold;
+    padding: 11px 200px;
+}
+.login-btn a:hover {
+    border: 7px double #00265c;
+    cursor: pointer;
+}
+/* 아이디 비번 찾기 */
+.find{
+    display: inline-block;
+    width: 450px;
+}
+.find a {
+    display: inline-block;
+    color: #0064de; 
+    text-align: center;
+    width: 48%;
+} 
+/*  다른 계정 로그인 라인 */
+.no-same {
+    display: block;
+    position: relative;
+}
+.no-same:before{
+    content: ' ';
+    position: absolute;
+    top: 15px;
+    left: 140px;
+    background-color: #333;
+    width: 150px;
+    height: 1px;
+}
+.no-same:after{
+    content: ' ';
+    position: absolute;
+    top:15px;
+    right: 140px;
+    background-color: #333;
+    width: 150px;
+    height: 1px;
+}
+/* 다른 계정 4개 */
+.login-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+ } 
+.login-sns{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 215px;
+    padding: 10px;
+}
+.login-sns label {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.8rem 0 3.5rem;
+}
+/* 회원가입 버튼 */
+.signin{
+    display: flex;
+    justify-content: center;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    width: 590px;
+    padding: 15px;
+}
+
+/* footer 부분 */
+footer {
+    width: 100%;
+}
+.f-upper{
+    width: 100%;
+    background-color: #f3f4f8;
+} 
+.f-upper>.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+} 
+/* 기타 참고 메뉴 */
+.f-menu{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content:center;
+}
+.flex-box{
+    display:flex;
+    flex-direction:column;
+    margin-right:30px;
+    margin-left: 30px;
+    padding: 10px;
+    margin-top:30px;
+}
+h3{ 
+    font-weight: bold;
+    font-size: 20px;
+}
+.flex-box a {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-decoration:none;
+    text-align: middle;
+}
+.flex-box1{
+    display:flex;
+    flex-direction: row;
+    margin-top:15px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+} 
+
+/* f-lower */
+.f-lower>.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+} 
+/* 회사 정보 */
+.f-low-box1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+h5 span{
+    display: border;
+    font-weight: bolder;
+    color:#00265c;  
+}
+.info1 span{
+    display: border;
+}
+.info2 span{
+    display: border;
+}
+.copyright{
+    margin-top: 10px; 
+    display: border;
+    margin-bottom: 30px;
+} 
+/* 회사 연관 마크 */
+.f-low-box2 img{
+    display: border;
+    flex-direction: row;
+}
+
+@media only screen and (max-width:1059px){
+  /* header-맨 위 부분 */
+header .upper {
+    display: none;
+ }
+ header .upper img {
+    display: none;
+ }
+ /* header navbar 메뉴 */
+ header .lower .menu ul{
+     display: none;
+ }
+ header .menu > ul > li {
+     display: none;
+ }
+ .icon2{
+     display: block;
+ }
+/* 로그인 박스2 */
+.container-login{
+    box-shadow: 1px 1px 2px white;
+    width: 800px;
+    height: 830px;
+}
+/* 로그인 제목 글씨 */
+h1{
+    font-size: 30px;
+    padding-right: 600px;
+}
+/* 아이디, 스카이패스 번호 라디오 버튼 */
+.radio-btn label{
+  margin-right: 245px;
+}
+/* 아이디 비번 칸 */
+.login input{
+    width: 680px;
+}
+.login > label {
+    margin-right: 630px;
+}
+/* 아이디 체크 박스 */
+.checkbox{
+    margin-right: 590px;
+}
+/* 로그인 버튼 */
+.login-btn{
+    padding: 11px 320px;
+}
+/* 아이디 비번 찾기 */
+.find{
+    width: 610px;
+}
+/*  다른 계정 로그인 라인 */
+.no-same:before{
+    width: 270px;
+}
+.no-same:after{
+    width: 270px;
+}
+/* 다른 계정 4개 */
+.login-sns{
+    width: 340px;
+    justify-content: space-evenly;
+    padding-right: 100px;
+}
+/* 회원가입 버튼 */
+.signin{
+    width: 700px;
+}
+
+
+ /* footer 부분 */
+.f-upper{
+    width: 100%;
+    background-color: #f3f4f8;
+    margin-bottom: 30px;
+} 
+.f-upper>.container{
+    display: flex;
+    flex-direction:column;
+    margin: 0 25px 0 25px;
+}
+/* 기타 참고 메뉴 */
+.f-menu{
+    display: block;
+    margin-left: 170px;
+}
+.flex-box{
+   border-bottom: 1px solid gainsboro;
+   margin: 4px;
+}
+.flex-box a {
+   display: none;
+}
+.side-box{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.side-box1 img{
+    display:inline-block;
+    margin-left: 10px;
+}
+/* 회사 정보 */
+h5 span{
+    display: border;
+    font-weight: bolder;
+    color:#00265c;  
+}
+.info1 span{
+    display: border;
+}
+.info2 span{
+    display: none;
+}
+/* 회사 연관 마크 */
+.f-low-box2{
+    display: none;
+}    
+}
