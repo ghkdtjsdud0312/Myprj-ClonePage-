@@ -77,24 +77,24 @@
                     <h1>로그인</h1>
                     <!-- 아이디 라디오 버튼 -->
                     <div class="radio-btn">
-                        <input type="radio" name="user-id" id="user-id" checked>
+                        <input type="radio" name="radio" id="user-id" checked>
                         <label for="user-id">아이디</label>
                     <!-- 스카이패스 번호 라디오 버튼 -->
-                        <input type="radio" name="skypass number" id="skypass number">
+                        <input type="radio" name="radio" id="skypass number">
                         <label for="skypass number">스카이패스 번호</label>    
                     </div>
                     <!-- 아이디 입력 -->
                     <div class="login">
                         <label for="id">아이디</label>
                     </div>
-                    <div class="login">
+                    <div class="login input_bar">
                         <input type="text" name="id" id="id" autocomplete="off" required>
                     </div>
                         <!-- 비밀번호 입력 -->
                     <div class="login">
                         <label for="pwd">비밀번호</label>
                     </div>
-                    <div class="login">
+                    <div class="login input_bar">
                         <input type="password" name="pwd" id="pwd" autocomplete="off" required>
                     </div>
                     
@@ -105,7 +105,7 @@
                     </div>
                     <!-- 로그인 버튼 -->
                     <div class="login-btn">
-                        <a href="http://127.0.0.1:5500/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5.html" style="color: white">로그인</a>
+                        <a href="http://127.0.0.1:5500/input.html" style="color: white">로그인</a>
                     </div>
                     <!-- 아이디 찾기 -->
                     <div class="find">
@@ -117,31 +117,31 @@
                     <div class="or">
                         <span class="no-same">다른 계정으로 로그인</span>
                     </div>
-                <div class="login-box">
-                    <!-- 네이버 로그인 -->
-                    <div class="login-sns">
-                        <input type="image" src="/image/ico-naver.png" name="네이버" id="네이버" width="20px">
-                        <label for="네이버">네이버</label>
-                    </div>
+                    <div class="login-box">
+                     <!-- 네이버 로그인 -->
+                        <div class="login-sns">
+                            <input type="image" src="/image/ico-naver.png" name="네이버" id="네이버" width="20px">
+                            <label for="네이버">네이버</label>
+                        </div>
 
-                    <!-- 카카오 로그인 -->
-                    <div class="login-sns">
-                        <input type="image" src="/image/ico-kakao.png" name="카카오" id="카카오" width="20px">
-                        <label for="카카오">카카오</label>
-                    </div>
+                        <!-- 카카오 로그인 -->
+                        <div class="login-sns">
+                            <input type="image" src="/image/ico-kakao.png" name="카카오" id="카카오" width="20px">
+                            <label for="카카오">카카오</label>
+                        </div>
 
-                    <!-- 구글 로그인 -->
-                    <div class="login-sns">
-                        <input type="image" src="/image/ico-google.png" name="구글" id="구글" width="20px">
-                        <label for="구글">구글</label>
-                    </div>
+                        <!-- 구글 로그인 -->
+                        <div class="login-sns">
+                            <input type="image" src="/image/ico-google.png" name="구글" id="구글" width="20px">
+                            <label for="구글">구글</label>
+                        </div>
 
-                    <!-- 페이스북 로그인 -->
-                    <div class="login-sns">
-                        <input type="image" src="/image/ico-facebook.png" name="페이스북" id="페이스북" width="20px">
-                        <label for="페이스북">페이스북</label>
+                        <!-- 페이스북 로그인 -->
+                        <div class="login-sns">
+                            <input type="image" src="/image/ico-facebook.png" name="페이스북" id="페이스북" width="20px">
+                            <label for="페이스북">페이스북</label>
+                        </div>
                     </div>
-                </div>
                     <!-- 회원가입 버튼 -->
                     <div class="signin">
                         <a href="#">회원가입</a>
@@ -156,40 +156,73 @@
         <div class="f-upper">
             <div class="container">
                 <!-- 기타 참고 메뉴 -->
-                <div class="f-menu">
                     <div class="flex-box">
-                        <h3>회사소개</h3>
-                        <a href="#">대한항공에 대하여</a>
-                        <a href="#">기업지배구조</a>
-                        <a href="#">투자정보</a>
-                        <a href="#">지속가능경영</a>
-                        <a href="#">뉴스룸</a>
+                        <div class="flex-box-title">
+                            <h3>회사소개</h3>
+                                <div class="flex-box-title img">
+                                    <img src="/image/snb__title.png" alt="아래표시">
+                                </div>
+                        </div>
+                        <div class="title_detail">
+                            <a href="#">대한항공에 대하여</a>
+                            <a href="#">기업지배구조</a>
+                            <a href="#">투자정보</a>
+                            <a href="#">지속가능경영</a>
+                            <a href="#">뉴스룸</a>
+                        </div>
                     </div>
+
                     <div class="flex-box">
-                        <h3>고객지원</h3>
-                        <a href="#">공지사항</a>
-                        <a href="#">고객의 말씀</a>
-                        <a href="#">서비스 센터</a>
-                        <a href="#">e-서식함</a>
-                        <a href="#">웹 접근성</a>
+                        <div class="flex-box-title">
+                            <h3>고객지원</h3>
+                                <div class="flex-box-title img">
+                                    <img src="/image/snb__title.png" alt="아래표시">
+                                </div>
+                        </div>
+                            <div class="title_detail">
+                                <a href="#">공지사항</a>
+                                <a href="#">고객의 말씀</a>
+                                <a href="#">서비스 센터</a>
+                                <a href="#">e-서식함</a>
+                                <a href="#">웹 접근성</a>
+                            </div>
                     </div>
+
                     <div class="flex-box">
-                        <h3>약관 및 규정</h3>
-                        <a href="#">이용 약관</a>
-                        <a href="#">운송약관 및 고지사항</a>
-                        <a href="#">소비자 안전 관련 정보</a>
-                        <a href="#">운임 및 서비스 요금표</a>
-                    </div>
+                        <div class="flex-box-title">
+                            <h3>약관 및 규정</h3>
+                                <div class="flex-box-title img">
+                                    <img src="/image/snb__title.png" alt="아래표시">
+                                </div>
+                        </div>
+                    
+                            <div class="title_detail">
+                                <a href="#">이용 약관</a>
+                                <a href="#">운송약관 및 고지사항</a>
+                                <a href="#">소비자 안전 관련 정보</a>
+                                <a href="#">운임 및 서비스 요금표</a>
+                            </div>
+                    </div>  
+        
+
                     <div class="flex-box">
-                        <h3>기타 안내</h3>
-                        <a href="#">기업 출장 여행</a>
-                        <a href="#">고객 안내 서비스</a>
-                        <a href="#">항공교통이용자 서비스 계획</a>
-                        <a href="#">항공교통이용자 피해 구제</a>
-                        <a href="#">관련 사이트</a>
-                        <a href="#">사이트맵</a>
+                        <div class="flex-box-title">
+                            <h3>기타 안내</h3>
+                                <div class="flex-box-title img">
+                                    <img src="/image/snb__title.png" alt="아래표시">
+                                </div>
+                        </div>
+                        
+                        <div class="title_detail">
+                            <a href="#">기업 출장 여행</a>
+                            <a href="#">고객 안내 서비스</a>
+                            <a href="#">항공교통이용자 서비스 계획</a>
+                            <a href="#">항공교통이용자 피해 구제</a>
+                            <a href="#">관련 사이트</a>
+                            <a href="#">사이트맵</a>
+                        </div>
                     </div>    
-                </div>
+                
                 <div class="side-box">
                     <div class="flex-box1">
                         <img src="/image/sns__link--youtube.png" alt="유튜브">

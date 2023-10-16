@@ -97,44 +97,40 @@ header .menu > ul > li {
 
 /* 메인 배경화면 */
 .container-box{
+    padding: 70px 0 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom,#8bbdf8 -75%,#e9f3fb 89%);
-    height: 800px;
 }
 /* 로그인 박스 */
 .login-boxes{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
 }
 /* 로그인 박스2 */
 .container-login{
     background-color: white;
     box-shadow: 1px 1px 5px gray;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 590px;
-    height: 710px;
 }
 /* 로그인 글씨 박스 */
 .container-boxes{
     display: flex;
     flex-direction: column;
-    margin-left: 42px;
-    margin-right: 42px;
-    height: 610px;
-    margin-top: 77px;
 }
 /* 로그인 글씨 박스 간격 */
-.container-boxes > h1, div{
+.container-boxes > h1 {
     line-height: 31px;
-    display: block;
-    margin: 5px;
+    margin-top: 70px;
+}
+.container-boxes > div{
+    line-height: 31px;
+
 }
 /* 로그인 제목 글씨 */
 h1{
@@ -143,6 +139,12 @@ h1{
     padding-right: 345px;
 }
 /* 아이디, 스카이패스 번호 라디오 버튼 */
+.input_bar {
+    margin: 30px 0;
+}
+.radio-btn {
+    margin: 30px 0;
+}
 .radio-btn label{
   margin-right: 130px;
 }
@@ -167,6 +169,7 @@ h1{
     background-color: #00265c;
     font-weight: bold;
     padding: 11px 200px;
+    margin-top: 20px;
 }
 .login-btn a:hover {
     border: 7px double #00265c;
@@ -176,6 +179,7 @@ h1{
 .find{
     display: inline-block;
     width: 450px;
+    margin: 20px;
 }
 .find a {
     display: inline-block;
@@ -185,6 +189,7 @@ h1{
 } 
 /*  다른 계정 로그인 라인 */
 .no-same {
+    margin: 10px 0 30px;
     display: block;
     position: relative;
 }
@@ -229,11 +234,12 @@ h1{
 /* 회원가입 버튼 */
 .signin{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     border: 1px solid skyblue;
     background-color: skyblue;
     width: 590px;
     padding: 15px;
+    margin-top: 60px;
 }
 
 /* footer 부분 */
@@ -243,45 +249,42 @@ footer {
 .f-upper{
     width: 100%;
     background-color: #f3f4f8;
+    padding: 2.6rem 2rem 2.3rem;
 } 
 .f-upper>.container{
     display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
 } 
 /* 기타 참고 메뉴 */
-.f-menu{
-    width: 100vw;
-    height: 350px;
-    display: flex;
-    justify-content:center;
-}
 .flex-box{
+    width: 100%;
     display:flex;
     flex-direction:column;
-    margin-right:30px;
-    margin-left: 30px;
     padding: 10px;
-    margin-top:30px;
+}
+.flex-box a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: left;
 }
 h3{ 
     font-weight: bold;
     font-size: 20px;
 }
-.flex-box a {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    text-decoration:none;
-    text-align: middle;
+
+.title_detail a {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
 }
-.flex-box1{
-    display:flex;
-    flex-direction: row;
-    margin-top:15px;
-    padding-bottom: 10px;
-    margin-right: 10px;
-} 
+.flex-box-title img{
+    display: none;
+}
 
 /* f-lower */
 .f-lower>.container{
@@ -337,11 +340,15 @@ header .upper {
  .icon2{
      display: block;
  }
+ .container-box{
+    padding-top: 40px;
+    background: white;
+}
 /* 로그인 박스2 */
 .container-login{
     box-shadow: 1px 1px 2px white;
     width: 800px;
-    height: 830px;
+    padding: 0 50px 50px;
 }
 /* 로그인 제목 글씨 */
 h1{
@@ -349,12 +356,16 @@ h1{
     padding-right: 600px;
 }
 /* 아이디, 스카이패스 번호 라디오 버튼 */
+.radio-btn{
+    margin: 30px 0;
+}
 .radio-btn label{
   margin-right: 245px;
 }
 /* 아이디 비번 칸 */
 .login input{
     width: 680px;
+    margin-bottom: 30px;
 }
 .login > label {
     margin-right: 630px;
@@ -387,38 +398,49 @@ h1{
 /* 회원가입 버튼 */
 .signin{
     width: 700px;
+    margin-top: 30px;
 }
-
 
  /* footer 부분 */
 .f-upper{
     width: 100%;
     background-color: #f3f4f8;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    padding: 0 25px;
 } 
 .f-upper>.container{
     display: flex;
     flex-direction:column;
-    margin: 0 25px 0 25px;
 }
 /* 기타 참고 메뉴 */
-.f-menu{
-    display: block;
-    margin-left: 170px;
-}
+
 .flex-box{
    border-bottom: 1px solid gainsboro;
-   margin: 4px;
+   display: flex;
 }
 .flex-box a {
    display: none;
 }
+.flex-box-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_detail{
+    display: none;
+}
+.flex-box-title img{
+    display: block;
+}
 .side-box{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items:center;
     flex-direction: column;
     padding-bottom: 20px;
+    padding: 80px 0;
 }
 .side-box1 img{
     display:inline-block;
@@ -439,5 +461,6 @@ h5 span{
 /* 회사 연관 마크 */
 .f-low-box2{
     display: none;
-}    
+} 
+   
 }
