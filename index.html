@@ -1,363 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- head 부분 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- head 부분 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>항공편 예약 및 여행 정보 | 대한항공</title>
 
     <!-- link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<!-- header 부분 -->
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <!-- header 부분 -->
+  <body>
     <header>
-        <div class="container">
-            <!-- header-맨 위 부분 -->
-            <ul class="upper">
-                <img src="/image/icon-common-16-x-16-event.png" alt="이벤트 선물상자">
-                <li><a href="#">이벤트</a></li>
-                <img src="/image/icon-common-16-x-16-customer.png" alt="자주 묻는 질문">
-                <li><a href="#">자주 묻는 질문</a></li>
-                <img src="/image/lang__button.png" alt="언어 지구">
-                <li><a href="#">대한민국-한국어</a></li>  
-            </ul>
-            <div class="nav1">
-                <!-- header 대한항공마크 -->
-                <div class="lower">
-                    <div class="pic">
-                        <img src="image/logo--koreanair-pc.png" width="162px" alt="대한항공 로고">
-                        <img src="image/logo--skyteam-pc.png" width="35px" alt="대한항공">
-                    </div>
-                <!-- header navbar 메뉴 -->
-                    <nav class="menu">
-                        <ul>
-                            <li>
-                                <a href="#">예약</a>
-                                <img src="image/snb__title.png" alt="내림표시">
-                            </li>
-                            <li>
-                                <a href="#">공항</a>
-                                <img src="image/snb__title.png" alt="내림표시">
-                            </li>
-                            <li>
-                                <a href="#">기내</a>
-                                <img src="image/snb__title.png" alt="내림표시"> 
-                            </li>   
-                            <li>
-                                <a href="#">스카이패스</a>
-                                <img src="image/snb__title.png" alt="내림표시">
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- 로그인 & 검색 부분 -->
-                    <div class="loginmenu">
-                        <a href="#"class="button">로그인</a>
-                        <a href="#">
-                            <img class="icon1" src="image/icon-gnb-40-x-40-search.png" alt="돋보기">
-                        </a>
-                        <a href="#">
-                            <img class="icon2" src="/image/drawer-trigger.png" alt="상단바">
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <!-- header-맨 위 부분 -->
+        <ul class="upper">
+          <img
+            src="./image/icon-common-16-x-16-event.png"
+            alt="이벤트 선물상자" />
+          <li><a href="#">이벤트</a></li>
+          <img
+            src="./image/icon-common-16-x-16-customer.png"
+            alt="자주 묻는 질문" />
+          <li><a href="#">자주 묻는 질문</a></li>
+          <img src="./image/lang__button.png" alt="언어 지구" />
+          <li><a href="#">대한민국-한국어</a></li>
+        </ul>
+        <div class="nav1">
+          <!-- header 대한항공마크 -->
+          <div class="lower">
+            <div class="pic">
+              <img
+                src="./image/logo--koreanair-pc.png"
+                width="162px"
+                alt="대한항공 로고" />
+              <img
+                src="./image/logo--skyteam-pc.png"
+                width="35px"
+                alt="대한항공" />
             </div>
-        </div>   
+            <!-- header navbar 메뉴 -->
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a href="#">예약</a>
+                  <img src="./image/snb__title.png" alt="내림표시" />
+                </li>
+                <li>
+                  <a href="#">공항</a>
+                  <img src="./image/snb__title.png" alt="내림표시" />
+                </li>
+                <li>
+                  <a href="#">기내</a>
+                  <img src="./image/snb__title.png" alt="내림표시" />
+                </li>
+                <li>
+                  <a href="#">스카이패스</a>
+                  <img src="./image/snb__title.png" alt="내림표시" />
+                </li>
+              </ul>
+            </nav>
+            <!-- 로그인 & 검색 부분 -->
+            <div class="loginmenu">
+              <a href="./login.html" class="button">로그인</a>
+              <a href="#">
+                <img
+                  class="icon1"
+                  src="./image/icon-gnb-40-x-40-search.png"
+                  alt="돋보기" />
+              </a>
+              <a href="#">
+                <img
+                  class="icon2"
+                  src="./image/drawer-trigger.png"
+                  alt="상단바" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- main 부분 -->
     <main>
-        <!-- section 첫 번째 -->
-        <section class="bg">
-            <div class="main-box">
-                <!-- 경고 문고 -->
-                <div class="warning">
-                    <img src="/image/icon-main__alert.png" width="15px" alt="주의표시">
-                    <a href="#">이스라엘 항공편 비정상 운항 예상</a> 
-                </div>
-                <!-- 항공권 예약 메뉴바 -->
-                <div class="tab-title">
-                    <p>항공권 예매</p>
-                    <p>예약 조회</p>
-                    <p>체크인</p>
-                    <p>항공편 현황</p>
-                </div>
-                <!-- 항공권 예약 메뉴바 내용 -->
-                <div class="tab_box">
-                    <div class="tab_box1">
-                        <label for="번호">예약번호 또는 항공권번호</label>
-                        <input type="text" name="번호" id="번호" placeholder="예) A1B2C3 또는 1801234567890">
-                    </div>
-                    <div class="tab_box1">
-                        <label for="출발일">출발일</label>
-                        <input type="date" name="date" id="date">
-                    </div>
-                    <div class="tab_box1">
-                        <label for="승객 성">승객 성</label>
-                        <input type="text" name="승객 성" id="승객 성">
-                    </div>
-                    <div class="tab_box1">
-                        <label for="승객 이름">승객 이름</label>
-                        <input type="text" name="승객 이름" id="승객 이름">
-                    </div>
-                    <div class="tab_box1-btn">
-                        <a href="#">조회</a>
-                    </div>
-                </div>
+      <!-- section 첫 번째 -->
+      <section class="bg">
+        <div class="main-box">
+          <!-- 경고 문고 -->
+          <div class="warning">
+            <img
+              src="./image/icon-main__alert.png"
+              width="15px"
+              alt="주의표시" />
+            <a href="#">이스라엘 항공편 비정상 운항 예상</a>
+          </div>
+          <!-- 항공권 예약 메뉴바 -->
+          <div class="tab-title">
+            <p>항공권 예매</p>
+            <p>예약 조회</p>
+            <p>체크인</p>
+            <p>항공편 현황</p>
+          </div>
+          <!-- 항공권 예약 메뉴바 내용 -->
+          <div class="tab_box">
+            <div class="tab_box1">
+              <label for="번호">예약번호 또는 항공권번호</label>
+              <input
+                type="text"
+                name="번호"
+                id="번호"
+                placeholder="예) A1B2C3 또는 1801234567890" />
             </div>
-        </section>
-        
-        <!-- section 두 번째 -->
-        <section class="cards">
-            <div class="container">
-                <!-- 카드 메뉴바 -->
-                <div class="card-view">
-                    <div>
-                    <div class="card-item-image image-no1"></div>
-                </div>
-                    <div class="card-item-desc">여행지별 입국 요건 지도에서 확인하세요.</div>
-                </div>
-                
-                <div class="card-view">
-                    <div>
-                    <div class="card-item-image image-no2"></div>
-                </div>
-                    <div class="card-item-desc">쌓이는 속도가 다르다! 대한항공카드 혜택 알아보기</div>
-                </div>
-                
-                <div class="card-view">
-                    <div>
-                    <div class="card-item-image image-no3"></div>
-                </div>
-                    <div class="card-item-desc">안전한 여행의 시작, 여행 보험 간편하게 가입하세요.</div>
-                </div>
-            </div>    
-        </section>
-
-        <!-- section 세 번째 -->
-        <section>
-            <div class="list-container">
-                <!-- 게시판 목록 -->
-                <div class="list">
-                    <div class="notice1">
-                        <h2>알려드립니다</h2>
-                        <hr>
-                        <div class="flex-line">
-                            <p class="title"><a href="#">여수-제주 운항 재개</a></p>
-                            <p class="date">2023.10.11.</p>
-                        </div>
-                        <hr>
-                        <div class="flex-line">
-                            <p class="title"><a href="#">국내선 유류할증료 (2023년 11월)</a></p>
-                            <p class="date">2023.10.06.</p>
-                        </div>
-                        <hr>
-                        <div class="flex-line">
-                            <p class="title"><a href="#">동남아 노선 신규 취항 및 단거리 노선 재운항 안내</a></p>
-                            <p class="date"> 2023.10.05.</p>
-                        </div>
-                        <hr>
-                        <div class="flex-line">
-                            <p class="title"><a href="#">한국 출발 국제선 유류할증료 (2023년 10월)</a></p>
-                            <p class="date">2023.09.27.</p>
-                        </div>
-                        <hr>
-                    </div>
-                    <!-- 게시판 사진 -->
-                    <div class="notice2">
-                        <img class="notice2" src="/image/A_PC.png" alt="">
-                    </div>
-                </div>
+            <div class="tab_box1">
+              <label for="출발일">출발일</label>
+              <input type="date" name="date" id="date" />
             </div>
-        </section>
-        
-       <!-- section 네 번째 -->
-        <section class="travel-sec">
-            <div class="container">
-                <!-- 여행 정보 사이트 -->
-                <div class="travel">
-                    <div class="card-box">
-                        <div>
-                            <h1>여행의 완성을 위한 경험</h1>
-                        </div>
-                        <div class="card-box1">
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">대한항공카드</div>
-                                    <div class="flex-item-image image1"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">호텔</div>
-                                    <div class="flex-item-image image2"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">렌터카</div>
-                                    <div class="flex-item-image image3"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">기내 면세점</div>
-                                    <div class="flex-item-image image4"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">여행자 보험</div>
-                                    <div class="flex-item-image image5"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-                            
-                            <div class="flex-card-view">
-                                <div class="flex-card-view1">
-                                    <div class="flex-item">여행 상품</div>
-                                    <div class="flex-item-image image6"></div>
-                                </div>
-                                <div class="flex-card-img">
-                                    <img src="/image/snb__title.png" alt="아래표시">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab_box1">
+              <label for="승객 성">승객 성</label>
+              <input type="text" name="승객 성" id="승객 성" />
             </div>
-        </section>       
+            <div class="tab_box1">
+              <label for="승객 이름">승객 이름</label>
+              <input type="text" name="승객 이름" id="승객 이름" />
+            </div>
+            <div class="tab_box1-btn">
+              <a href="#">조회</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 두 번째 -->
+      <section class="cards">
+        <div class="container">
+          <!-- 카드 메뉴바 -->
+          <div class="card-view">
+            <div>
+              <div class="card-item-image image-no1"></div>
+            </div>
+            <div class="card-item-desc">
+              여행지별 입국 요건 지도에서 확인하세요.
+            </div>
+          </div>
+
+          <div class="card-view">
+            <div>
+              <div class="card-item-image image-no2"></div>
+            </div>
+            <div class="card-item-desc">
+              쌓이는 속도가 다르다! 대한항공카드 혜택 알아보기
+            </div>
+          </div>
+
+          <div class="card-view">
+            <div>
+              <div class="card-item-image image-no3"></div>
+            </div>
+            <div class="card-item-desc">
+              안전한 여행의 시작, 여행 보험 간편하게 가입하세요.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 세 번째 -->
+      <section>
+        <div class="list-container">
+          <!-- 게시판 목록 -->
+          <div class="list">
+            <div class="notice1">
+              <h2>알려드립니다</h2>
+              <hr />
+              <div class="flex-line">
+                <p class="title"><a href="#">여수-제주 운항 재개</a></p>
+                <p class="date">2023.10.11.</p>
+              </div>
+              <hr />
+              <div class="flex-line">
+                <p class="title">
+                  <a href="#">국내선 유류할증료 (2023년 11월)</a>
+                </p>
+                <p class="date">2023.10.06.</p>
+              </div>
+              <hr />
+              <div class="flex-line">
+                <p class="title">
+                  <a href="#"
+                    >동남아 노선 신규 취항 및 단거리 노선 재운항 안내</a
+                  >
+                </p>
+                <p class="date">2023.10.05.</p>
+              </div>
+              <hr />
+              <div class="flex-line">
+                <p class="title">
+                  <a href="#">한국 출발 국제선 유류할증료 (2023년 10월)</a>
+                </p>
+                <p class="date">2023.09.27.</p>
+              </div>
+              <hr />
+            </div>
+            <!-- 게시판 사진 -->
+            <div class="notice2">
+              <img class="notice2" src="./image/A_PC.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 네 번째 -->
+      <section class="travel-sec">
+        <div class="container">
+          <!-- 여행 정보 사이트 -->
+          <div class="travel">
+            <div class="card-box">
+              <div>
+                <h1>여행의 완성을 위한 경험</h1>
+              </div>
+              <div class="card-box1">
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">대한항공카드</div>
+                    <div class="flex-item-image image1"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">호텔</div>
+                    <div class="flex-item-image image2"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">렌터카</div>
+                    <div class="flex-item-image image3"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">기내 면세점</div>
+                    <div class="flex-item-image image4"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">여행자 보험</div>
+                    <div class="flex-item-image image5"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+
+                <div class="flex-card-view">
+                  <div class="flex-card-view1">
+                    <div class="flex-item">여행 상품</div>
+                    <div class="flex-item-image image6"></div>
+                  </div>
+                  <div class="flex-card-img">
+                    <img src="./image/snb__title.png" alt="아래표시" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-        <!-- footer 부분 -->
+    <!-- footer 부분 -->
     <footer>
-        <div class="f-upper">
-            <div class="container">
-                <!-- 기타 참고 메뉴 -->
-                <div class="f-menu">
-                    <div class="flex-box">
-                        <div class="flex-box-title">
-                            <h3>회사소개</h3>
-                            <a href="#">대한항공에 대하여</a>
-                            <a href="#">기업지배구조</a>
-                            <a href="#">투자정보</a>
-                            <a href="#">지속가능경영</a>
-                            <a href="#">뉴스룸</a>
-                        </div>
-                        <div class="flex-box-title img">
-                            <img src="/image/snb__title.png" alt="아래표시">
-                        </div>
-                    </div>
-
-                    <div class="flex-box">
-                        <div class="flex-box-title">
-                            <h3>고객지원</h3>
-                            <a href="#">공지사항</a>
-                            <a href="#">고객의 말씀</a>
-                            <a href="#">서비스 센터</a>
-                            <a href="#">e-서식함</a>
-                            <a href="#">웹 접근성</a>
-                        </div>
-                        <div class="flex-box-title img">
-                            <img src="/image/snb__title.png" alt="아래표시">
-                        </div>
-                    </div>
-
-                    <div class="flex-box">
-                        <div class="flex-box-title">
-                            <h3>약관 및 규정</h3>
-                            <a href="#">이용 약관</a>
-                            <a href="#">운송약관 및 고지사항</a>
-                            <a href="#">소비자 안전 관련 정보</a>
-                            <a href="#">운임 및 서비스 요금표</a>
-                        </div>
-                        <div class="flex-box-title img">
-                            <img src="/image/snb__title.png" alt="아래표시">
-                        </div>
-                    </div>
-
-                    <div class="flex-box">
-                        <div class="flex-box-title">
-                            <h3>기타 안내</h3>
-                            <a href="#">기업 출장 여행</a>
-                            <a href="#">고객 안내 서비스</a>
-                            <a href="#">항공교통이용자 서비스 계획</a>
-                            <a href="#">항공교통이용자 피해 구제</a>
-                            <a href="#">관련 사이트</a>
-                            <a href="#">사이트맵</a>
-                        </div>
-                        <div class="flex-box-title img">
-                            <img src="/image/snb__title.png" alt="아래표시">
-                        </div>
-                    </div>    
-                </div>
-                <div class="side-box">
-                    <div class="side-box1">
-                        <img src="/image/sns__link--youtube.png" alt="유튜브">
-                        <img src="/image/sns__link--instagram.png" alt="인스타">
-                        <img src="/image/sns__link--facebook.png" alt="페이스북">
-                        <img src="/image/sns__link--twitter.png" alt="트위터">
-                    </div>
-                    <div class="side-box1">
-                        <img src="/image/banner-googleplay.png" alt="구글플레이">
-                        <img src="/image/banner-appstore.png" alt="애플앱스토어">
-                    </div>
-                    <div class="side-box1">
-                        <img src="/image/banner-busan2030.png" alt="부산세계박람회">
-                    </div>
-                </div>
+      <div class="f-upper">
+        <div class="container">
+          <!-- 기타 참고 메뉴 -->
+          <div class="f-menu">
+            <div class="flex-box">
+              <div class="flex-box-title">
+                <h3>회사소개</h3>
+                <a href="#">대한항공에 대하여</a>
+                <a href="#">기업지배구조</a>
+                <a href="#">투자정보</a>
+                <a href="#">지속가능경영</a>
+                <a href="#">뉴스룸</a>
+              </div>
+              <div class="flex-box-title img">
+                <img src="./image/snb__title.png" alt="아래표시" />
+              </div>
             </div>
-        </div>
-            
-        <div class="f-lower">
-            <div class="container">
-                <!-- 회사 정보 -->
-                <div class="f-low-box1">
-                    <div class="info">
-                        <div class="info1">
-                            <h5><span>(주)대한항공</span></h5>
-                            <span>대표:우기홍 외 1명</span>
-                            <span>주소 : 서울특별시 강서구 하늘길 260</span>
-                            <span>전화 : 1588-2001/02-2656-2001</span>
-                        </div>
-                        <div class="info2">
-                            <span>사업자등록번호 : 110-81-14794</span>
-                            <span>통신판매업신고: 강서 제 16-3010</span>
-                            <span>개인정보보호책임자 : 장성현 대한항공 부사장</span>
-                        </div>
-                        <div class="copyright">
-                            © 1997-2023 KOREAN AIR
-                        </div>
-                    </div>
-                </div>
-                <!-- 회사 연관 마크 -->
-                <div class="f-low-box2">
-                    <img src="/image/logo__wa.png" alt="과학기술정보통신부">
-                    <img src="/image/logo__isms.png" alt="isms">
-                    <img src="/image/logo__ccm.png" alt="소비자중심">
-                    <img src="/image/logo__skytrax.png" alt="skytrax">
-                </div>
+
+            <div class="flex-box">
+              <div class="flex-box-title">
+                <h3>고객지원</h3>
+                <a href="#">공지사항</a>
+                <a href="#">고객의 말씀</a>
+                <a href="#">서비스 센터</a>
+                <a href="#">e-서식함</a>
+                <a href="#">웹 접근성</a>
+              </div>
+              <div class="flex-box-title img">
+                <img src="./image/snb__title.png" alt="아래표시" />
+              </div>
             </div>
+
+            <div class="flex-box">
+              <div class="flex-box-title">
+                <h3>약관 및 규정</h3>
+                <a href="#">이용 약관</a>
+                <a href="#">운송약관 및 고지사항</a>
+                <a href="#">소비자 안전 관련 정보</a>
+                <a href="#">운임 및 서비스 요금표</a>
+              </div>
+              <div class="flex-box-title img">
+                <img src="./image/snb__title.png" alt="아래표시" />
+              </div>
+            </div>
+
+            <div class="flex-box">
+              <div class="flex-box-title">
+                <h3>기타 안내</h3>
+                <a href="#">기업 출장 여행</a>
+                <a href="#">고객 안내 서비스</a>
+                <a href="#">항공교통이용자 서비스 계획</a>
+                <a href="#">항공교통이용자 피해 구제</a>
+                <a href="#">관련 사이트</a>
+                <a href="#">사이트맵</a>
+              </div>
+              <div class="flex-box-title img">
+                <img src="./image/snb__title.png" alt="아래표시" />
+              </div>
+            </div>
+          </div>
+          <div class="side-box">
+            <div class="side-box1">
+              <img src="./image/sns__link--youtube.png" alt="유튜브" />
+              <img src="./image/sns__link--instagram.png" alt="인스타" />
+              <img src="./image/sns__link--facebook.png" alt="페이스북" />
+              <img src="./image/sns__link--twitter.png" alt="트위터" />
+            </div>
+            <div class="side-box1">
+              <img src="./image/banner-googleplay.png" alt="구글플레이" />
+              <img src="./image/banner-appstore.png" alt="애플앱스토어" />
+            </div>
+            <div class="side-box1">
+              <img src="./image/banner-busan2030.png" alt="부산세계박람회" />
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="f-lower">
+        <div class="container">
+          <!-- 회사 정보 -->
+          <div class="f-low-box1">
+            <div class="info">
+              <div class="info1">
+                <h5><span>(주)대한항공</span></h5>
+                <span>대표:우기홍 외 1명</span>
+                <span>주소 : 서울특별시 강서구 하늘길 260</span>
+                <span>전화 : 1588-2001/02-2656-2001</span>
+              </div>
+              <div class="info2">
+                <span>사업자등록번호 : 110-81-14794</span>
+                <span>통신판매업신고: 강서 제 16-3010</span>
+                <span>개인정보보호책임자 : 장성현 대한항공 부사장</span>
+              </div>
+              <div class="copyright">© 1997-2023 KOREAN AIR</div>
+            </div>
+          </div>
+          <!-- 회사 연관 마크 -->
+          <div class="f-low-box2">
+            <img src="./image/logo__wa.png" alt="과학기술정보통신부" />
+            <img src="./image/logo__isms.png" alt="isms" />
+            <img src="./image/logo__ccm.png" alt="소비자중심" />
+            <img src="./image/logo__skytrax.png" alt="skytrax" />
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
